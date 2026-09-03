@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberVPN — Créer un compte</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Cyber</span><strong>VPN</strong>
+        </div>
+
+        <button class="menu-button" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Connexion</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="login-page">
+
+            <div class="login-box">
+
+                <p class="login-small">
+                    CYBERVPN
+                </p>
+
+                <h1>
+                    Créer un compte
+                </h1>
+
+                <p class="login-description">
+                    Créez votre compte CyberVPN.
+                </p>
+
+
+                <form id="registerForm">
+
+                    <label for="name">
+                        Nom
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Votre nom"
+                        required
+                    >
+
+
+                    <label for="registerEmail">
+                        Adresse e-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Votre adresse e-mail"
+                        required
+                    >
+
+
+                    <label for="registerPassword">
+                        Mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Votre mot de passe"
+                        required
+                    >
+
+
+                    <label for="confirmPassword">
+                        Confirmer le mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirmez votre mot de passe"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Créer mon compte
+                    </button>
+
+                </form>
+
+
+                <p class="login-register">
+                    Vous avez déjà un compte ?
+                    <a href="login.html">Se connecter</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <span>Cyber</span><strong>VPN</strong>
+            </div>
+
+            <p>
+                Une navigation plus sécurisée, simplement.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Connexion</a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 CyberVPN. Tous droits réservés.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
