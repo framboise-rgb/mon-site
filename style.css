@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #07111f;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* BARRE DU HAUT */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #050b14;
+    border-bottom: 1px solid #16263a;
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #aab6c8;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* CONTENU */
+
+main {
+    text-align: center;
+    padding-top: 150px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    color: #aab6c8;
+}/* GRAND ÉCRAN D'ACCUEIL */
+
+.hero {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-small {
+    color: #4da3ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #4da3ff;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    color: #aab6c8;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+/* BOUTONS */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button-primary {
+    background: #4da3ff;
+    color: #06101d;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    border: 1px solid #30445c;
+    color: white;
+}
+
+.button-secondary:hover {
+    background: #101e30;
+}
+
+/* VERSION TÉLÉPHONE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 18px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+}
