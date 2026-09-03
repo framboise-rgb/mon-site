@@ -103,7 +103,6 @@ nav a:hover {
 
 main {
     text-align: center;
-    padding-top: 150px;
 }
 
 h1 {
@@ -772,4 +771,17 @@ body {
     position: relative;
     z-index: 1003;
     pointer-events: auto;
+}
+.login-page {
+    padding-top: 60px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input,
+.login-box button {
+    width: 100%;
 }
