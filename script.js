@@ -34,14 +34,17 @@ if (registerForm) {
         }
 
         const { data, error } = await supabaseClient.auth.signUp({
-            email: email,
-            password: password,
-            options: {
-                data: {
-                    name: name
-                }
-            }
-        });
+    email: email,
+    password: password,
+
+    options: {
+        emailRedirectTo: "https://framboise-rgb.github.io/mon-site/login.html",
+
+        data: {
+            name: name
+        }
+    }
+});
 
         if (error) {
             alert("Erreur : " + error.message);
